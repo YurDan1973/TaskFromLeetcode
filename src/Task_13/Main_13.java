@@ -46,13 +46,15 @@ package Task_13;
 
 import java.util.Scanner;
 
+import static Task_13.Solution_13.romanToInt;
+
 public class Main_13 {
     public static void main(String[] args) {
-        String s;
-        System.out.println("Введите s в таком формате s = 'III'");
+
+        System.out.println("Введите s ");
         Scanner sc = new Scanner(System.in);
-        s = sc.nextLine();
-        System.out.println();
+        String s = sc.nextLine();
+        System.out.println(romanToInt(s));
 
     }
 }
