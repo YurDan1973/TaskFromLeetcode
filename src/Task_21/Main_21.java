@@ -32,7 +32,6 @@
  */
 package Task_21;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -42,22 +41,38 @@ import static Task_21.Solution_21.mergeTwoLists;
 public class Main_21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите количество узлов списка1 в диапазоне [0, 50]");
+        System.out.println("Введите количество узлов списка l1 в диапазоне [0, 50]");
         int x1 = sc.nextInt();
-        System.out.println("Введите значения узлов списка1 >= -100 и <= 100");
+        System.out.println("Введите значения узлов ln1 >= -100 и <= 100");
         List<Integer> l1 = new LinkedList<>();
         for (int i = 0; i < x1; i++) {
-            l1.add(Integer.valueOf(sc.next()));
+            int ln1 = sc.nextInt();
+            l1.add(ln1);
         }
 
-        System.out.println("Введите количество узлов списка2 в диапазоне [0, 50]");
+        System.out.println("Введите количество узлов списка  l2 в диапазоне [0, 50]");
         int x2 = sc.nextInt();
-        System.out.println("Введите значения узлов списка1 >= -100 и <= 100");
+        System.out.println("Введите значения узлов ln2 >= -100 и <= 100");
         List<Integer> l2 = new LinkedList<>();
         for (int i = 0; i < x2; i++) {
-            l2.add(Integer.valueOf(sc.next()));
+            int ln2 = sc.nextInt();
+            l2.add(ln2);
         }
 
+//        for (Integer number : l1) {
+//            System.out.print(number + " ");
+//        }
+//        for (Integer number : l2) {
+//            System.out.print(number + " ");
+//        }
 
+
+        List<ListNode> l3 = new LinkedList<>();
+        ListNode dummy_l3 = new ListNode(0);
+        dummy_l3 = mergeTwoLists(ListNode l1, ListNode l2);
+        l3.add(dummy_l3);
+        for (ListNode number : l3) {
+            System.out.print(number + " ");
+        }
     }
 }
