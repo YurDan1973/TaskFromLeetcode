@@ -59,20 +59,13 @@ public class Main_21 {
             l2.add(ln2);
         }
 
-//        for (Integer number : l1) {
-//            System.out.print(number + " ");
-//        }
-//        for (Integer number : l2) {
-//            System.out.print(number + " ");
-//        }
-
-
-        List<ListNode> l3 = new LinkedList<>();
-        ListNode dummy_l3 = new ListNode(0);
-        dummy_l3 = mergeTwoLists(ListNode l1, ListNode l2);
-        l3.add(dummy_l3);
-        for (ListNode number : l3) {
+        for (Integer number : l1) {
             System.out.print(number + " ");
         }
+        System.out.println();
+        for (Integer number : l2) {
+            System.out.print(number + " ");
+        }
+
     }
 }
