@@ -47,7 +47,6 @@ public class Main_26 {
     public static void main(String[] args) {
         int[] arr = {0,0,1,1,1,2,2,3,3,4};  // Входной массив
         int k = Solution_26.removeDuplicates(arr); // Вызывает реализацию
-        int[] expectedNums = new int[k];// Ожидаемый ответ с правильной длиной
         System.out.println(k);
     }
 }
