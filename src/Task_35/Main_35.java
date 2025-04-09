@@ -29,10 +29,9 @@ import static Task_35.Solution_35.searchInsert;
 
 public class Main_35 {
     public static void main(String[] args) {
-        int[] array = {1};
-        int targ = 2;
+        int[] array = {1, 3, 5, 6};
+        int targ = 7;
         int ind = searchInsert(array, targ);
         System.out.println(ind);
     }
-
 }
