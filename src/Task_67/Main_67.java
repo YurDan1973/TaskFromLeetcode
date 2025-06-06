@@ -56,8 +56,6 @@
 
 package Task_67;
 
-import java.util.Arrays;
-
 public class Main_67 {
     public static void main(String[] args) {
         String s1 = "1010";
